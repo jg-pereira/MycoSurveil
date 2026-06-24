@@ -38,7 +38,7 @@ git clone https://github.com/joana.gomes/MycoSurveil.git
 ```
 
 ### Examples of command-line usage
-
+```bash
 snakemake -s workflow/snakefile.smk -j 4 -p --use-conda
-
+```
 
