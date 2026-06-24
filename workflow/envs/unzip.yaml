@@ -1,0 +1,13 @@
+name: zip
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - libgcc=15.2.0=h69a1729_7
+  - libgcc-ng=15.2.0=h166f726_7
+  - libgomp=15.2.0=h4751f2c_7
+  - unzip=6.0=h611a1e1_0
+prefix: /home/jgomes/miniconda3/envs/zip

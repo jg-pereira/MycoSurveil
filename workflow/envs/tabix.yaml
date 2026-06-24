@@ -1,0 +1,14 @@
+name: tabix
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - libgcc=15.2.0=h69a1729_7
+  - libgcc-ng=15.2.0=h166f726_7
+  - libgomp=15.2.0=h4751f2c_7
+  - tabix=0.2.6=ha92aebf_0
+  - zlib=1.2.13=hd233ad5_2
+prefix: /home/jgomes/miniconda3/envs/tabix
