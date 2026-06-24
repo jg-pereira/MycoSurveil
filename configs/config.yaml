@@ -1,0 +1,31 @@
+# config/config.yaml
+
+# Sample file
+metadata: "/mnt/c/Users/joana.gomes/resources/metadata.xlsx"
+
+# Folders
+input_dir: "/mnt/c/Users/joana.gomes/resources/rawdata_fastq"
+ref_genome: "/mnt/c/Users/joana.gomes/resources/ref_genome/GCF_000182965.3_ASM18296v3_genomic.fna"
+results:
+  base: "results"
+  fastqc_raw: "results/fastqc_raw"
+  trimmed: "results/trimmed"
+  fastqc_trimmed: "results/fastqc_trimmed"
+  bams: "results/bams"
+  indexed_ref_genome: "results/indexed_ref_genome"
+  stats: "results/stats"
+  nquire: "results/nquire"
+  vcf: "results/vcf"
+  kat: "results/kat"
+  phylo: "results/phylo"
+  reportree: "results/reportree"
+  snp_dists: "results/snp_dists"
+# Parameters
+ploidy_genome: "2"
+
+#targets:
+#  - fastqc
+#  - metadata
+
+paths:
+  nquire_bin: "/mnt/c/Users/joana.gomes/nQuire/nQuire"
