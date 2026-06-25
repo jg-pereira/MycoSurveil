@@ -22,6 +22,7 @@ The MycoSurveil pipeline is a command-line tool, implemented using Snakemake, wi
 - A folder with two subfolders:
   - `rawdata_fastq`: containing reads in FASTQ format.
   - `ref_genome`: containing the reference genome of *Candida* in fna format.
+- An Excel metadata file (.xlsx) containing two mandatory columns: Sample_ID and NGS_ID
 
 ## Output
 - A metadata `.xlsx` file containing the following variables: 
