@@ -31,7 +31,7 @@ parent_directory/
     ├── ref_genome/            # Subfolder containing the reference genome (*Candida*) in .fna format
     └── metadata.xlsx          # Excel file containing two mandatory columns: Sample_ID and NGS_ID
 ```
-(Note: A ready-to-use toy dataset following this exact structure is provided in the examples/ folder for testing and demonstration purposes).
+(Note: A ready-to-use toy dataset following this exact structure is provided in the `examples/` folder for testing and demonstration purposes).
 
 ## Output
 - A metadata `.xlsx` file containing the following variables: 
