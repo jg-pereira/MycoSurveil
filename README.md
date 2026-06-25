@@ -1,4 +1,4 @@
-# MycoSurveil
+# MycoSurveil (under development)
 
 **MycoSurveil** is an open-source, start-to-end bioinformatics framework tailored for the genomic surveillance of fungal pathogens. Developed to address the critical gaps in fungal genomics, the project provides automated solutions to detect, characterize, and track public health threats caused by *Candida*.
 
