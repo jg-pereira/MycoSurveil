@@ -153,6 +153,8 @@ rule nquire_create:
         bam = config["results"]["bams"] + "/{Sample_ID}/{Sample_ID}.sorted.markdup.bam"
     output:
         bin = config["results"]["nquire"] + "/{Sample_ID}.bin"
+    conda:
+        "../envs/nQuire.yaml"
     params:
         exe = config["paths"]["nquire_bin"],
         out_dir = config["results"]["nquire"]
@@ -160,7 +162,7 @@ rule nquire_create:
         """
         mkdir -p {params.out_dir}
         
-        {params.exe} create -b {input.bam} -o {params.out_dir}/{wildcards.Sample_ID} -q 20
+        nQuire create -b {input.bam} -o {params.out_dir}/{wildcards.Sample_ID} -q 20
         """
 
 rule nquire_denoise:
@@ -171,9 +173,11 @@ rule nquire_denoise:
     params:
         exe = config["paths"]["nquire_bin"],
         out_dir = config["results"]["nquire"]
+    conda:
+        "../envs/nQuire.yaml"
     shell:
         """
-        {params.exe} denoise {input.bin} -o {params.out_dir}/{wildcards.Sample_ID}_denoised
+        nQuire denoise {input.bin} -o {params.out_dir}/{wildcards.Sample_ID}_denoised
         """
 
 rule nquire_lrdmodel:
@@ -183,9 +187,11 @@ rule nquire_lrdmodel:
         txt = config["results"]["nquire"] + "/{Sample_ID}_lrdmodel.txt"
     params:
         exe = config["paths"]["nquire_bin"]
+    conda:
+        "../envs/nQuire.yaml"
     shell:
         """
-        {params.exe} lrdmodel {input.bin} > {output.txt}
+        nQuire lrdmodel {input.bin} > {output.txt}
         """
 
 rule nquire_histotest:
@@ -195,7 +201,9 @@ rule nquire_histotest:
         txt = config["results"]["nquire"] + "/{Sample_ID}_histotest.txt"
     params:
         exe = config["paths"]["nquire_bin"]
+    conda:
+        "../envs/nQuire.yaml"
     shell:
         """
-        {params.exe} histotest {input.bin} > {output.txt}
+        nQuire histotest {input.bin} > {output.txt}
         """
