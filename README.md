@@ -35,15 +35,11 @@ To run this pipeline is necessary an input folder with a suitable structure:
 
 1. **Clone the repository**
 
-Clone the repository and navigate into the project directory:
-
 ```bash
 git clone https://github.com/jg-pereira/MycoSurveil.git
 ```
 
 2. **Create the Conda environment**
-
-To create the conda environment:
 
 ```bash
 conda create -n mycosurveil -c conda-forge -c bioconda snakemake=9.13.7
