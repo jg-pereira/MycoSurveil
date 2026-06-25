@@ -1,0 +1,9 @@
+name: nquire_env
+channels:
+  - conda-forge
+  - bioconda
+  - hcc
+  - defaults
+dependencies:
+  - hcc::nquire =0.0.2018.04.05
+  - bioconda::htslib =1.17
