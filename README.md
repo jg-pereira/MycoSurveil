@@ -37,7 +37,7 @@ The MycoSurveil pipeline is a command-line tool, implemented using Snakemake, wi
 Clone the repository and navigate into the project directory:
 
 ```bash
-git clone https://github.com/joana.gomes/MycoSurveil.git
+git clone https://github.com/jg-pereira/MycoSurveil.git
 ```
 
 2. **Create the Conda environment**
