@@ -19,7 +19,8 @@ The MycoSurveil pipeline is a command-line tool, implemented using Snakemake, wi
 3. **Variant Calling and Phylogenetic Analysis:** Accurate detection of Single Nucleotide Polymorphisms (SNPs) and Indels against reference fungal genomes. Reconstruction of evolutionary relationships and high-resolution automated cluster detection to identify outbreaks and transmission chains.
 
 ## Input
-- A folder with two subfolders:
+To run this pipeline is necessary an input folder with a suitable structure: 
+- A folder, for exemple named ` with two subfolders:
   - `rawdata_fastq`: containing reads in FASTQ format.
   - `ref_genome`: containing the reference genome of *Candida* in fna format.
 - An Excel metadata file (.xlsx) containing two mandatory columns: Sample_ID and NGS_ID
@@ -52,6 +53,7 @@ conda create -n mycosurveil -c conda-forge -c bioconda snakemake=9.13.7
 
 ```bash
 conda activate mycosurveil
+cd MycoSurveil
 ```
 
 ### Examples of command-line usage
