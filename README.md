@@ -19,11 +19,19 @@ The MycoSurveil pipeline is a command-line tool, implemented using Snakemake, wi
 3. **Variant Calling and Phylogenetic Analysis:** Accurate detection of Single Nucleotide Polymorphisms (SNPs) and Indels against reference fungal genomes. Reconstruction of evolutionary relationships and high-resolution automated cluster detection to identify outbreaks and transmission chains.
 
 ## Input
-To run this pipeline is necessary an input folder with a suitable structure: 
-- A folder, for exemple named ` with two subfolders:
-  - `rawdata_fastq`: containing reads in FASTQ format.
-  - `ref_genome`: containing the reference genome of *Candida* in fna format.
-- An Excel metadata file (.xlsx) containing two mandatory columns: Sample_ID and NGS_ID
+To run this pipeline, an input folder with a specific structure is required.
+For instance, you can create a folder named `resources` containing your data. Crucially, this folder must be located at the same directory level as the cloned MycoSurveil repository.
+
+### Required Directory Structure:
+```
+parent_directory/
+├── MycoSurveil/               # Cloned GitHub repository
+└── resources/                 # Input folder (at the same level as MycoSurveil)
+    ├── rawdata_fastq/         # Subfolder containing reads in FASTQ format
+    ├── ref_genome/            # Subfolder containing the reference genome (*Candida*) in .fna format
+    └── metadata.xlsx          # Excel file containing two mandatory columns: Sample_ID and NGS_ID
+```
+(Note: A ready-to-use toy dataset following this exact structure is provided in the examples/ folder for testing and demonstration purposes).
 
 ## Output
 - A metadata `.xlsx` file containing the following variables: 
