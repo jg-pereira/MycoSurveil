@@ -26,7 +26,7 @@ The MycoSurveil pipeline is a command-line tool, implemented using Snakemake, wi
 ## Output
 - A metadata `.xlsx` file containing the following variables: 
   `Sample_ID`, `NGS_ID`, `Raw_Reads`, `Raw_GC_Content`, `Trimmed_Reads`, `Trimmed_GC_Content`, `Mapping_Rate`, `Ploidy`, `R^2_Nquire`, `Depth_Coverage`, `Coverage`, `Nr_Variants`, `SNPs_Total`, `SNPs_Filtered`, `Indels_Total`, `Indels_Filtered`, `High-Quality Homozygous Variants (Pass_Homo_SNP)`, and `High-Quality Heterozygous Variants (Pass_Hetero_SNP)`.
-- A phylogenetic tree file.
+- A phylogenetic tree file (newick format).
 
 
 ### Installation with conda
